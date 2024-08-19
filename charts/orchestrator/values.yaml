@@ -102,9 +102,9 @@ orchestrator:
         cpu: "500m"
 
 tekton:
-  enabled: false # whether to create the Tekton pipeline resources
+  enabled: true # whether to create the Tekton pipeline resources
 
 argocd:
-  enabled: false # whether to install the ArgoCD plugin and create the orchestrator AppProject
+  enabled: true # whether to install the ArgoCD plugin and create the orchestrator AppProject
   namespace: "" # Defines the namespace where the orchestrator's instance of ArgoCD is deployed. The value is captured when running setup.sh script and stored as a label in the selected namespace. User can override the value by populating this field. Defaults to `orchestrator-gitops` in the setup.sh script.
 
